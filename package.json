@@ -1,5 +1,5 @@
 {
-  "name": "aha-bem",
+  "name": "vite-plugin-aha-bem",
   "version": "1.0.0",
   "description": "Happy using BEM in the tag.",
   "main": "index.js",

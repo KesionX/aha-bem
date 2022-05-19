@@ -2,7 +2,17 @@
 
 Happy using BEM in the tag.
 
+## Installation
+
+`npm i vite-plugin-aha-bem`
+
 ## Usage
+
+```ts
+// vite.config.ts
+import ahaBem from 'vite-plugin-aha-bem';
+plugins[ahaBem()]
+```
 
 ## Example Effect
 
