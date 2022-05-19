@@ -1,8 +1,10 @@
 {
   "name": "vite-plugin-aha-bem",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Happy using BEM in the tag.",
-  "main": "index.js",
+  "main": "./dist/index.js",
+  "module": "./dist/index.js",
+  "type": "commonjs",
   "repository": {
     "type": "git",
     "url": "git+https://github.com/KesionX/aha-bem.git"
