@@ -1,0 +1,39 @@
+{
+  "name": "aha-bem",
+  "version": "1.0.0",
+  "description": "Happy using BEM in the tag.",
+  "main": "index.js",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/KesionX/aha-bem.git"
+  },
+  "bugs": {
+    "url": "https://github.com/KesionX/aha-bem/issues"
+  },
+  "homepage": "https://github.com/KesionX/aha-bem#readme",
+  "scripts": {
+    "build": "tsc --project .",
+    "dev": "tsc --project . -w",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "bem",
+    "vue3",
+    "vue3-bem",
+    "vue.js",
+    "style",
+    "css"
+  ],
+  "dependencies": {
+    "@vue/compiler-sfc": "^3.2.33",
+    "magic-string": "^0.26.2"
+  },
+  "author": "Kesion",
+  "license": "ISC",
+  "prettier": {
+    "tabWidth": 2
+  },
+  "devDependencies": {
+    "@types/node": "^17.0.35"
+  }
+}
