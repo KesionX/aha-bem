@@ -43,7 +43,7 @@ function transformAhaBem(
   magic: MagicString,
   block = ""
 ) {
-  let splicing = "";
+  let splicing = block;
   // 有效tag
   if (templateAst.type === 1) {
     // 属性值
@@ -59,10 +59,12 @@ function transformAhaBem(
       const prop = props[i] as ITemplateTagProp;
       // 其他类型
       if (prop.type !== 6) {
+        // TODO :class prop.type === 7 class变量处理
         continue;
       }
       // 非变量
-      // class="xxx"
+      // class="xxx" 
+      // TODO class 值合并
       if (prop.name === "class") {
         prop.value?.content;
         continue;
@@ -87,6 +89,7 @@ function transformAhaBem(
           hasHandleElement = true;
         }
         // modify xxx | v-xxx 可处理多次
+        // TODO 响应式处理
         if (bemType === "m") {
           modifyClasses.push(splicing + "--" + bemValue);
         }
